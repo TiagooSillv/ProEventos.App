@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
-import { EventoService } from '../services/evento.service';
-import { Evento } from '../model/Evento';
+import { EventoService } from '../../services/evento.service';
+import { Evento } from '../../model/Evento';
 import { ToastrService } from 'ngx-toastr';
 
 import {Modal} from 'bootstrap'
