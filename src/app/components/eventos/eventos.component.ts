@@ -27,6 +27,8 @@ export class EventosComponent {
   public exibirImagem : boolean = true;
   private _filtroListado : string = '';
 
+  public modalIntance : Modal | undefined;
+
   public get filtroLista(){
     return this._filtroListado;
   }
@@ -65,7 +67,15 @@ export class EventosComponent {
   
   ngOnInit(): void {
     this.getEventos();
+    // Inicializando o modal
     const modalElement = document.getElementById('exampleModal');
+    if (modalElement) {
+      this.modalInstance = new Modal(modalElement);
+    } else {
+      console.error('Elemento do modal não encontrado!');
+    }
+    
+
     
   }
   
