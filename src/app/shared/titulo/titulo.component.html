@@ -1,11 +1,14 @@
-<h2>
-    {{titulo}}
-</h2>
-<hr>
-<div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
-    <i class="fa fa-user"></i>
-    <div class="lh-1">
-      <h1 class="h6 mb-0 text-white lh-1">Bootstrap</h1>
-      <small>Since 2011</small>
+<div class="d-flex align-items-center p-3 my-3 text-white bg-secondary rounded shadow-sm">
+  <div class="d-flex align-items-center me-auto">
+    <i class="{{iconClass}}"></i>
+    <div class="lh-100">
+      <h2 class="mb-0">{{titulo}}</h2>
+      <small>{{subtitulo}}</small>
     </div>
   </div>
+  <div class="p-3" *ngIf="botaoListar">
+    <button class="btn btn-outline-light">
+      Listar {{titulo}}
+    </button> 
+  </div>
+</div>
