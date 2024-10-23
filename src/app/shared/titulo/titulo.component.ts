@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 
 @Component({
@@ -15,10 +16,13 @@ export class TituloComponent implements OnInit {
 
   
 
-  constructor() { }
+  constructor(private router : Router) { }
   
 
   ngOnInit() {
+  }
+  listar() : void {
+    this.router.navigate([`/${this.titulo.toLowerCase()}/lista`])
   }
 
 }
