@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -49,7 +49,8 @@ import { RegistrationComponent } from './components/user/registration/registrati
     EventoListaComponent,
     UserComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    
 
 
 
@@ -64,6 +65,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
     FormsModule,
     TooltipModule.forRoot(),
     BsDropdownModule.forRoot(),
+    ReactiveFormsModule,
     ToastrModule.forRoot({
       timeOut : 3000,
       positionClass : 'toast-bottom-right',

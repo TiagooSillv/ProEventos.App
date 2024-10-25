@@ -22,12 +22,21 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    // forma para poder adicionar um atalho nas referencias ao inves de usar ../../ podemos já definir o caminho
+    // "paths" : {
+    //   "@app/*" : ["src/app/*"],
+    //   "@environments/*" : ["src/enviroments/*"]
+    // },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  // "angularCompilerOptions" : {
+  //   "strictTempletes" : true,
+  //   "strictInjectionParameters" : true
+  // }
 }
