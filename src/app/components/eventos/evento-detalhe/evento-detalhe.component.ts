@@ -10,7 +10,7 @@ export class EventoDetalheComponent {
 
   form: FormGroup;
 
-  get f() : any{
+  get f() : any{ 
     return this.form.controls;
   }
 
